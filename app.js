@@ -8,7 +8,7 @@ favMovie('die hard', 'david');
 */
 
 //arrow functions
-
+/*
 let favMovie = (movie = 'the Room', name ='Tommy Wiseau') => console.log(`My  name is ${name} and myfavorite movie is ${movie}`);
 favMovie();
 favMovie('die hard', 'david');
@@ -28,3 +28,25 @@ let doMath= (a, b) =>({exponential: a^b, product: a*b});
 result = doMath(4,2);
 
 console.log(`the results are the exponential is ${result.exponential} and the product is ${result.product}!`);
+*/
+
+//Spread Syntax
+let arr =['david', 'atl', 'steak'];
+ things=(name, location, favFood) => console.log(`my name is ${name}, I love ${location}, and my favorite food is ${favFood}!`);
+things(...arr);
+
+
+//spell my name
+let myName = "David";
+
+let spellMyName = spelling=> {
+    let letters = [...spelling];
+    for (i = 0; i<letters.length; i++){
+        console.log(letters[i]);
+    }}
+spellMyName(myName);
+
+
+
+let chars =[...myName];
+console.log(chars)
